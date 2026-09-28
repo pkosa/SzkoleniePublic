@@ -15,13 +15,13 @@ jobs:
           cat /home/student/osv
 
       
-    ubuntu-echo2:
-      runs-on: pkosa
-      steps:
-        - name: "Show OS"
-          run: |
-            echo "This job is running on an my runner."
-            cat /home/student/osv
+  ubuntu-echo2:
+    runs-on: pkosa
+    steps:
+      - name: "Show OS"
+        run: |
+          echo "This job is running on an my runner."
+          cat /home/student/osv
 
   windows-echo:
     runs-on: windows-latest
