@@ -6,7 +6,7 @@ on:
 
 jobs:
   ubuntu-echo:
-    runs-on: pkosa
+    runs-on: etykieta_szkolenia
     steps:
       - name: "Show OS"
         run: |
@@ -16,7 +16,7 @@ jobs:
 
       
   ubuntu-echo2:
-    runs-on: pkosa
+    runs-on: etykieta_szkolenia
     steps:
       - name: "Show OS"
         run: |
