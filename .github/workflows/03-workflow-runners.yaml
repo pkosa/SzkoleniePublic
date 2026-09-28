@@ -16,6 +16,7 @@ jobs:
 
       
   ubuntu-echo2:
+    needs: ubuntu-echo
     runs-on: etykieta_szkolenia
     steps:
       - name: "Show OS"
