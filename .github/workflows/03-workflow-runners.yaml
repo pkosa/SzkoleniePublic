@@ -9,9 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Show OS"
-        run: |
+      - run: |
+          mkdir ./art
           echo "This job is running on an Ubuntu runner."
-          lsb_release -a
+          lsb_release -a > ./art/osr
+          cat ./art/osr
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sharefile
+          path: ./art/osr
 
   windows-echo:
     runs-on: windows-latest
