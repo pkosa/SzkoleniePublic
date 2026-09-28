@@ -10,5 +10,5 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - run: `echo "I will fail"; ls hsdksd`
-      - run: echo ""Goodbye!""
+      - run: `echo "I will fail"; ls hsddksd`
+      - run: echo ""Goodbye!"" 
