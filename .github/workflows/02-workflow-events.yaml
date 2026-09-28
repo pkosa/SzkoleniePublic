@@ -1,7 +1,10 @@
 ---
-name: "02 – Workflow Events"
+name: 02 – Workflow Events
 on: 
   push:
+  pull_request: 
+  schedule:
+  workflow_dispatch:
 
 jobs:
   echo:
