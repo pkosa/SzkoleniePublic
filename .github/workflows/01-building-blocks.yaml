@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: "Failed step"
         run: |
-          echo "I wil fail"
+          echo "I will fail"
           ls sdfsdfs
           echo "Goodby"
