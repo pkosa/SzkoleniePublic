@@ -6,19 +6,22 @@ on:
 
 jobs:
   ubuntu-echo:
-    runs-on: ubuntu-latest
+    runs-on: pkosa
     steps:
       - name: "Show OS"
         run: |
-          mkdir ./art
-          echo "This job is running on an Ubuntu runner."
-          lsb_release -a > ./art/osr
-          cat ./art/osr
-      - uses: actions/checkout@v4
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sharefile
-          path: ./art/
+          echo "This job is running on an my runner."
+          lsb_release -a > /home/student/osv
+          cat /home/student/osv
+
+      
+    ubuntu-echo2:
+      runs-on: pkosa
+      steps:
+        - name: "Show OS"
+          run: |
+            echo "This job is running on an my runner."
+            cat /home/student/osv
 
   windows-echo:
     runs-on: windows-latest
