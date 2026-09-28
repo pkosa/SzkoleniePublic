@@ -1,0 +1,1 @@
+link jenkins https://lab-pawel-kosakiewicz.github.jsystems.cloud:23459/
