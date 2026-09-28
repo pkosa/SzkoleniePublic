@@ -1,10 +1,10 @@
 ---
 name: 02 – Workflow Events
 on: 
-  push:
-  pull_request: 
-  schedule:
-    - cron: '32 12 * * *'
+  #push:
+  #pull_request: 
+  #schedule:
+  #  - cron: '32 12 * * *'   #W darmowej wersji cron dziala w nieokreslony sposób 
   workflow_dispatch:
 
 jobs:
