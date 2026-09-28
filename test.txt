@@ -1,1 +1,4 @@
 link jenkins https://lab-pawel-kosakiewicz.github.jsystems.cloud:23459/
+haslo M->n
+ssh: ssh student@lab-pawel-kosakiewicz.github.jsystems.cloud
+haslo XYZ+GithubAc710n5@2026
