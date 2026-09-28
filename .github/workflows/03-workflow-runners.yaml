@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Show OS"
-      - run: |
+        run: |
           mkdir ./art
           echo "This job is running on an Ubuntu runner."
           lsb_release -a > ./art/osr
