@@ -6,9 +6,13 @@ jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, World!"
+      - name: "Say hello"
+        run: echo "Hello, World!"
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - run: `echo "I will fail"; ls hsddksd`
-      - run: echo ""Goodbye!"" 
+      - name: "Failed step"
+        run: |
+          echo "I wil fail"
+          ls sdfsdfs
+          echo "Goodby"
