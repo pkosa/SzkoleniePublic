@@ -3,3 +3,6 @@ lgin pkosa
 haslo M->n
 ssh: ssh student@lab-pawel-kosakiewicz.github.jsystems.cloud
 haslo XYZ+GithubAc710n5@2026
+
+https://lab-pawel-kosakiewicz.github.jsystems.cloud:23457/?folder=/home/student/gha
+https://lab-pawel-kosakiewicz.github.jsystems.cloud:23457/?folder=/home/student/example/SzkoleniePublic
