@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 set -e
 # Twój klucz API dla OpenWeatherMap
 # zabezpiecz go przed udostępnianiem publicznym
