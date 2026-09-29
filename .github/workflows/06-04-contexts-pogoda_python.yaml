@@ -1,0 +1,34 @@
+name: 06-04 - Pogoda Info Python
+
+run-name: 06-04 - Python Pogoda dla ${{ inputs.city }}
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: "City to get weather info for"
+        required: true
+        default: "Wroclaw"
+        type: string
+
+env:
+  MY_KLUCZYK: "901b2799309f24e7c5d833aacc8c61a4"
+
+jobs:
+  pogoda-info:
+    name: Pobierz informacje o pogodzie
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./CWICZENIA/06-context/pogoda_python
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Sprawdzanie pogody
+        run: |
+          python3 ./start.py "${{ inputs.city }}" "${{ env.MY_KLUCZYK }}" >> "$GITHUB_STEP_SUMMARY"
