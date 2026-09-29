@@ -1,6 +1,7 @@
 name: Pogoda
 
 on:
+  push:
   workflow_dispatch:
     inputs:
       city:
@@ -23,6 +24,9 @@ jobs:
     steps:
       - name: Checkout repozytorium
         uses: actions/checkout@v3
+
+      - name: ls
+        run: ls -R
 
       - name: Pobierz informacje o pogodzie
         run: |
